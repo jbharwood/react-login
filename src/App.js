@@ -29,12 +29,7 @@ class App extends React.Component {
 			if (response.errors) {
 				alert(response.errors)
 			} else {
-				debugger
-				// this.props.setCurrentUser(response.user)
-				// this.props.dispatch({type: "SET_CURRENT_USER", payload: response.user})
-				// localStorage.setItem('jwt', response.jwt)
-				// this.props.history.push(`/`)
-				// this.postToFeedUsers(response.user)
+				console.log(response.user.username);
 			}
 		})
 	}
